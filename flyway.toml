@@ -1,0 +1,29 @@
+databaseType = "MySql"
+id = "5efa2aae-ca1e-41a4-a6f7-401b31795478"
+name = "mutualista flyway"
+
+[flyway]
+locations = [ "filesystem:migrations" ]
+mixed = true
+outOfOrder = true
+schemaModelLocation = "schema-model"
+validateMigrationNaming = true
+
+  [flyway.check]
+  majorTolerance = 0
+
+[flywayDesktop]
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.mysql.options.ignores]
+ignoreNewlinesInTextObjects = "off"
+
+[environments.mutualista]
+url = "jdbc:mysql://localhost:3306"
+user = "root"
+schemas = [ "mutualista" ]
+displayName = "Mutualista"
