@@ -23,7 +23,7 @@ filterFile = "filter.rgf"
 ignoreNewlinesInTextObjects = "off"
 
 [environments.mutualista]
-url = "jdbc:mysql://localhost:3306"
+url = "jdbc:mysql://127.0.0.1:3306"
 user = "root"
 schemas = [ "mutualista" ]
 displayName = "Mutualista"
